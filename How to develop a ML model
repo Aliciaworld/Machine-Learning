@@ -1,0 +1,13 @@
+...need to be improved
+1. Define adequately problem
+2. Collect data
+3. Choose measure of success
+4. Set evaluation metric
+5. Prepare data
+6. Split collectly data
+7. Differentiate between over- and under-fitting
+8. Develop benmark model
+9. Train different models and choose the best one;
+10. Tune hyperparameter of the best models
+11. Test model
+12. Give insights/suggestion based on the predictions
