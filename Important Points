@@ -1,0 +1,34 @@
+#Ensemble Learning method#:
+  1) bagging: i) also known as boostrap aggregation; 
+              ii) reduce variance within a noisy dataset; 
+              iii) random sample selected with replacement
+  2) boosting: fix predecessor's error
+  3) stacking: combine bagging and boosting
+
+
+#Gradient boosting#:
+  1) can't handle categorical feature itself
+  2) similar to random forest, only accept numerical values
+  3) XGBoost(201403), LightGBM(201701), CatBoost(201704)
+
+  #Gradient#:
+    Gradient represents the slope of the tangent of the loss function.
+  
+  #XGBoost#:
+    1) pre-sorted algorithm & histogram-based algorithm
+ 
+  #lightGBM#:
+    1) LGBM
+    2) GBM is histogram-based algorithm, LGBM reduce histogram building by GOSS(gradient-based one side sampling)
+    4) GOSS keep all instances with large gradients, and perform random sampling in the instances with small gradients
+    5) Down the feautres by EFB(exclusive feature bundles)
+
+  #CatBoost#:
+    1) Category and boosting
+    2) Must specify the categorical columns otherwise it will treats them as numeric or throw error.
+
+#Adaptive boosting#:
+  1) The sample weight serves as a good indicator for the importance of samples.
+  2) Adaboost(1995)
+
+
