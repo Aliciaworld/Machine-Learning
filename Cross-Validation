@@ -1,0 +1,10 @@
+Cross-valication is a technique in which we train the model using the subset of the dataset and then evaluate using the complementary subset of the dataset. The steps are as follows:
+1) reserve some protion of sample dataset;
+2) using the rest to train the model;
+3) test the model using the reserve portion of the datset;
+
+K-Fold cross validation
+We split the dataset into k number of subsets (known as folds) then perform training on the all subsets but leave one(k-1) subset for the evaluation of the trained model. We iterate k times with a different subset reserved for testing purpose each time.
+
+Reference:
+https://www.geeksforgeeks.org/cross-validation-machine-learning/
