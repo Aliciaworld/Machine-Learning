@@ -1,0 +1,48 @@
+Ways to improve on out-of-the-box machine learning models: feature engineering; hyper-parameter tuning, and selecting the correct cost function.
+
+When building a model, you can eigher go about it randomly or intentionally. The interntional approach to building a model is using error analysis.
+
+Error Analysis requires you to dig into the results of the model after each iteration. Look at the data and precitions on an observational level and form hypotheses as to why the model failes on certain predictions. Then test hypothesis by changing the model in a way that might fix that error, and begin the next iteration. Each iteration of modeling becomes more time consumig with error analysis, but the final results are better and will likely arrive faster. The general patterns to good error analysis is:
+1) Find errors;
+2) Create a hypothesis for what could fix the errors;
+3) Test hypothesis;
+4) repeat
+
+
+I. Data Level Errors
+  1) Over-fitting/Under-fitting
+    using learning curves (score VS. numbers of training examples)
+
+   Potential fixes:
+    If over-fitting then L1 or L2 regularization or more data
+    If under-fitting then a more complex model or more features
+
+  2)Prediction Distribution
+    Make sure that the distribution of your data looks somewhat similar to the distribution of your predictions.
+    
+   Potential Fixes:
+     Removing outliers from data
+     Using a different cost function
+
+
+II. Group Level Errors
+The purpose of this part of the error analysis is to identify groups on which the model performed poorly. I might start by looking at the prediction errors by categorical variables and then move on to splitting numerical variables into bins to examine. When looking at groups, there are a few specific things that I always look out for.
+
+  1) Over/Under Predictions
+    Check to see if there are any specific groups for which the model over-predicts or under-predicts a large amount of the time.
+    
+   Potential Fixes:
+    Penalize over-predictions for that group
+    Oversampling methods if data is lacking
+    Data collection if data is lacking
+
+  2) Large Average Errors
+    Check to see if any group is contributing way more to the total error than all of the other groups.
+  
+  Potential Fixes:
+    K-Stratified cross-validation to ensure group observations in every split
+    Oversampling methods if data is lacking
+    Data collection is data is lacking
+
+III. Individual Errors
+Once we have done all of the higher level error analysis, it is time to dive in to the errors of each observation. I like to do this by looking at the top 20 errors from my predictions. 
