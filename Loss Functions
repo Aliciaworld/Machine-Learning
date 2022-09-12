@@ -1,0 +1,20 @@
+For all supervised learning procedures, the first thing one must do to train a neural network is to specify a loss function. Depending on whether classification or regression, one must utilize a different kind of loss function.
+    Regression: commonly used loss function to train neural netowrks is "Mean Squared Error", and "Mean Absolute Error”.
+    Classification: most commonly used loss function is the cross-entropy.
+
+
+Loss Functions:
+    1). Cross-Entropy:
+        A cost function for logistic regression;
+        Cross-entropy loss or log loss, measures the performance of a classification model whose output is a probability value between 0 and 1;
+        Cross-entropy loss increases as the predicted probability diverges from the actual label;
+        cross-entropy = -(ylog(p) + (1-y)log(1-p));
+    2). Huber:
+        Typically used for regression. 
+        It's less sensitive to outliers than the MSE as it treats error as square only inside an interval.
+    3). MAE(L1)
+    4). MSE(L2)
+        
+        
+
+  
