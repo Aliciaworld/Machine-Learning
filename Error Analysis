@@ -1,8 +1,8 @@
 Ways to improve on out-of-the-box machine learning models: feature engineering; hyper-parameter tuning, and selecting the correct cost function.
 
-When building a model, you can eigher go about it randomly or intentionally. The interntional approach to building a model is using error analysis.
+When building a model, you can eigher go about it randomly or intentionally. The international approach to building a model is using error analysis.
 
-Error Analysis requires you to dig into the results of the model after each iteration. Look at the data and precitions on an observational level and form hypotheses as to why the model failes on certain predictions. Then test hypothesis by changing the model in a way that might fix that error, and begin the next iteration. Each iteration of modeling becomes more time consumig with error analysis, but the final results are better and will likely arrive faster. The general patterns to good error analysis is:
+Error Analysis requires you to dig into the results of the model after each iteration. Look at the data and precisions on an observational level and form hypotheses as to why the model failes on certain predictions. Then test hypothesis by changing the model in a way that might fix that error, and begin the next iteration. Each iteration of modeling becomes more time consumig with error analysis, but the final results are better and will likely arrive faster. The general patterns to good error analysis is:
 1) Find errors;
 2) Create a hypothesis for what could fix the errors;
 3) Test hypothesis;
@@ -42,7 +42,7 @@ The purpose of this part of the error analysis is to identify groups on which th
   Potential Fixes:
     K-Stratified cross-validation to ensure group observations in every split
     Oversampling methods if data is lacking
-    Data collection is data is lacking
+    Data collection if data is lacking
 
 III. Individual Errors
 Once we have done all of the higher level error analysis, it is time to dive in to the errors of each observation. I like to do this by looking at the top 20 errors from my predictions. 
